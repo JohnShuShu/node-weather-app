@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>MANTECH {{title}}</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- static path for public folder is already set in app.js -->
+    <link
+      rel="icon"
+      href="https://www.mantech.com/themes/custom/mantech_theme/apps/drupal/secondLogo.png"
+      sizes="32x32"
+    />
+    {{! <link rel="icon" href="https://www.inadev.com/wp-content/uploads/2023/05/cropped-Inadev_logo-32x32.jpg" sizes="32x32" />
+        <link rel="icon" href="https://www.inadev.com/wp-content/uploads/2023/05/cropped-Inadev_logo-192x192.jpg" sizes="192x192" /> }}
+
+  </head>
+  <body>
+    <div align="Center">
+      <h3>MANTECH</h3>
+      <h2>Weather App</h2>
+      {{!-- {{>header}} --}}
+    </div>
+    <div class="main-content">
+
+      <article class="widget">
+        <form class="weatherLocation"><input
+            placeholder="location..."
+            type="text"
+          /><button>Seach</button>
+        </form>
+        <div class="weatherIcon"><i class="wi wi-day-cloudy"></i></div>
+        <div class="weatherInfo">
+          <div class="temperature"><span></span></div>
+          <div class="description">
+            <div class="weatherCondition"></div>
+            <div class="place"></div>
+          </div>
+        </div>
+        <div class="date"></div>
+      </article>
+    </div>
+    <script src="js/app.js"></script>
+    <!-- absolute path -->
+  </body>
+</html>
